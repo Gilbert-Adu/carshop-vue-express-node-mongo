@@ -25,7 +25,7 @@ mongoose
     .catch((err) => console.log(err))
 
 app.get("/", (req, res) => {
-    res.redirect("http://www.lorenzos-car-shop.herokuapp.com");
+    res.redirect("/");
 });
 
 app.listen(process.env.PORT, () => console.log(`App listening at http://localhost:${process.env.PORT}`))

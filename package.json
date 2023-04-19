@@ -1,0 +1,21 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run dev --prefix './server/'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gilbert-Adu/carshop-vue-express-node-mongo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gilbert-Adu/carshop-vue-express-node-mongo/issues"
+  },
+  "homepage": "https://github.com/Gilbert-Adu/carshop-vue-express-node-mongo#readme"
+}

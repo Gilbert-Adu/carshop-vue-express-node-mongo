@@ -19,8 +19,10 @@ export default{
 </script>
 
 <template>
-    <div class="product-card">
-    <div class="product-image">
+    
+      <a :href="'http://localhost:3000/admin/cars/' + product._id">
+        <div class="product-card">
+          <div class="product-image">
       <img :src="product.image" :alt="product.name">
     </div>
     <div class="product-info">
@@ -28,8 +30,12 @@ export default{
       <p class="product-description">{{ product.description }}</p>
       <div class="product-price">${{ product.price }}</div>
     </div>
+    
   </div>
-
+   
+      </a>
+    
+    
   <!--
     <div class="product-cards">
     <div v-for="product in products" :key="product._id" class="card">

@@ -1,0 +1,16 @@
+<p>Hi there, <%= user.first_name%>!</p>
+
+<h1>Your admin inventory</h1>
+<ul>
+    <% inventory.forEach(function(car) { %>
+      <li>
+        <strong><%= car.title %></strong>
+        made by <%= car.make %>,
+        car's model is <%= car.model%>
+        assembled in <%= car.year %>
+        mileage is <%=car.mileage%>
+       cost is <%= car.price%>
+      </li>
+    <% }); %>
+    <a href="http://localhost:3000/admin/addCar">Add a car</a>
+  </ul>

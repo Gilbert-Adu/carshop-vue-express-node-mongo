@@ -12,7 +12,7 @@ export default {
                 <li><a href="#">Inventory</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="http://localhost:3000/admin/loginpage">Admin</a></li>
             </ul>
         </nav>
     </header>

@@ -89,10 +89,11 @@ import NavBar from "./components/NavBar.vue";
         <div :style="{margin: '50px', textAlign: 'center', fontSize: '50px'}">
           Featured cars
         </div>
-        <ProductCards v-for="product in message" :key="product._id" :product="product"/><br>
+          <ProductCards v-for="product in message" :key="product._id" :product="product"/>
         <hr>
 
     </div>
+    
 </template>
 
 

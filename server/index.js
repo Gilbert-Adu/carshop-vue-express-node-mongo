@@ -8,9 +8,13 @@ require('dotenv').config();
 const bodyParser = require("body-parser");
 app.use(cors()) // to allow cross origin requests
 app.use(bodyParser.json()) // to convert the request into JSON
+app.use(express.urlencoded());
 
+//view engine
+app.set('view engine', 'ejs');
 //routes
 app.use('/admin', routes);
+
 mongoose
     .connect(process.env.MONGO_URI, {
         useNewUrlParser: true,

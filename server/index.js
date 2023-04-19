@@ -24,8 +24,8 @@ mongoose
     .then(() => console.log('MongoDB database Connected...'))
     .catch((err) => console.log(err))
 
-//app.get("/", (req, res) => {
-    //res.redirect("http://localhost:5173");
-//});
+app.get("/", (req, res) => {
+    res.redirect("http://localhost:5173");
+});
 
 app.listen(process.env.PORT, () => console.log(`App listening at http://localhost:${process.env.PORT}`))
